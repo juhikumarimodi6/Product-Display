@@ -1,0 +1,81 @@
+h1 {
+text-align:center;
+color:rgb(255,37,137);
+text-shadow:2px 2px 4px black;
+border:solid;
+transform:skew(-15deg);
+background-color:purple;
+}
+
+.main {
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+}
+
+.blocks {
+position:relative;
+}
+
+.items{
+width:200px;
+height:200px;
+margin:20px;
+}
+
+.flex-container {
+display:flex;
+justify-content:center;
+}
+
+span {
+color:green;
+}
+
+p {
+text-align:center;
+margin:2px;
+}
+
+div.icons {
+width:20px;
+opacity:0;
+margin:20px;
+position:absolute;
+top:80px;
+}
+
+.icon{
+width:20px;
+background-color:white;
+border-radius:5px;
+}
+
+.items:hover +  .icons {
+opacity:1;
+}
+
+.icons:hover {
+opacity:1;
+}
+
+p.eye,  p.heart, p.cart{
+width:50px;
+opacity:0;
+font-size:10px;
+background-color:white;
+position:absolute;
+left:20px;
+}
+
+.eye:hover + p.eye{
+opacity:1;
+}
+
+.heart:hover + p.heart{
+opacity:1;
+}
+
+.cart:hover + p.cart{
+opacity:1;
+}
